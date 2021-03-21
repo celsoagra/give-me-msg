@@ -40,7 +40,7 @@ public class MessageService {
         	msg = msg.replace("{}", it.next());
         }
         
-        return msg.replaceAll("{}", "null"); 
+        return msg.replaceAll("\\{\\}", "null"); 
     }
 
     public void set(String key, String value) {

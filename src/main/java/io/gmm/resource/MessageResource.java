@@ -38,8 +38,8 @@ public class MessageResource {
 
     @PUT
     @Path("/{key}")
-    public void increment(@PathParam("key") String key, List<String> params) {
-        
+    public Message increment(@PathParam("key") String key, List<String> params) {
+    	return new Message(key, service.format(key, params));
     }
 
     @DELETE
