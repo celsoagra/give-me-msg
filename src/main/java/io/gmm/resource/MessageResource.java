@@ -13,7 +13,6 @@ import javax.ws.rs.PathParam;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
-import io.gmm.constants.Operation;
 import io.gmm.dto.MessageDTO;
 import io.gmm.entity.Message;
 import io.gmm.service.MessageService;
